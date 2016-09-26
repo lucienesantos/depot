@@ -2,6 +2,7 @@ source 'https://rubygems.org'
  gem 'nokogiri', '1.6.3.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
+gem 'mysql2', '0.3.17'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -58,7 +59,7 @@ group :development do
 end
 
 group :production do
-  gem 'mysql2', '0.3.17'
+  
 end
 
 group :test do
