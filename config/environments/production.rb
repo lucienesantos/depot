@@ -88,13 +88,5 @@ Rails.application.configure do
   :domain         => 'gmail.com',
   :enable_starttls_auto => true
 }
-set :stage, :production
-set :branch, "master"
-set :full_app_name, "#{fetch(:application)}_#{fetch(:stage)}"
-set :server_name, "SERVERURL"
-set :rails_env, :production
-role :app, %w{deploy@example.com}
-role :web, %w{deploy@example.com}
-role :db,  %w{deploy@example.com}
-server 'SERVERURL', user: 'deploy', roles: %w{web app db}, primary: :true
+
 end
