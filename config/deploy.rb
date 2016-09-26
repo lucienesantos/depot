@@ -1,6 +1,6 @@
 # Change thes
 
-server '104.236.62.107', port: 22, roles: [:web, :app, :db], primary: true
+server '104.131.65.3', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:lucienesantos/depot.git'
 set :application,     'depot'
