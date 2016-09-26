@@ -1,0 +1,64 @@
+pt:
+
+  activerecord:
+    models:
+      order:       "pedido"
+    attributes:
+      order:
+        address:   "Endereço"
+        name:      "Nome"
+        email:     "E-mail"
+        pay_type:  "Forma de pagamento"
+    errors:
+      messages:
+        inclusion: "Não está incluso na lista"
+        blank: "Não pode salvar em branco"
+
+  errors:
+    template:
+      body: "Os seguintes campos apresentou problemas:"
+      header:
+        one: "1 erro está impedindo que este %{model} seja salvo"
+        other: "%{count} erros estão impedindo que este %{model} seja salvo"
+
+  orders:
+    new:
+      legend: "Por favor, introduza seus dados"
+    form:
+      name: "Nome"
+      address_html: "Endereço"
+      email: "E-mail"
+      pay_type: "Forma de pagamento"
+      pay_prompt_html: "Seleccione uma forma de pagamento"
+      submit: "Realizar Pedido"
+
+  number:
+    currency:
+      format:
+        unit: "R$"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format: "%n&nbsp;%u"
+  carts:
+    cart:
+      title: "Carrinho de Compra"
+      empty: "Carro vazio"
+      checkout: "Comprar"  
+
+  layouts:
+    application:
+      title: "Publicações pragmáticas"
+      home: "Inicio"
+      questions: "Preguntas"
+      news: "Novo"
+      contact: "Contacto"
+
+  store:
+    index:
+      title_html: "Seu catalogo de Pragmatic"
+      add_html: "Adicionar ao carrinho"   
+      
+  thanks: "Obrigada pelo pedido!"     
+
+  
