@@ -4,7 +4,7 @@ server '104.236.62.107', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:lucienesantos/depot.git'
 set :application,     'depot'
-set :keep_releases,   5
+#set :keep_releases,   5
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
@@ -29,8 +29,8 @@ set :puma_init_active_record, true  # Change to false when not using ActiveRecor
 # set :scm,           :git
 # set :branch,        :master
 # set :format,        :pretty
- set :log_level,     :debug
-# set :keep_releases, 5
+set :log_level,     :debug
+set :keep_releases, 5
 
 ## Linked Files & Directories (Default None):
 Rake::Task["deploy:set_linked_dirs"].clear_actions
