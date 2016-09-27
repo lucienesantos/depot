@@ -50,7 +50,7 @@ end
 
 group :development, :production do
     gem 'byebug'
-    gem 'capistrano',         require: false
+    gem 'capistrano', '~> 3.0'
     gem 'capistrano-rvm',     require: false
     gem 'capistrano-rails',   require: false
     gem 'capistrano-bundler', require: false
