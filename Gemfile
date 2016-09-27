@@ -48,7 +48,7 @@ group :development do
   gem 'spring'
 end
 
-group :development, :production do
+group :development do
     gem 'byebug'
     gem 'capistrano', '~> 3.0'
     gem 'capistrano-rvm',     require: false
