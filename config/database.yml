@@ -28,7 +28,7 @@ production:
   timeout: 5000
   database: depot_production
   username: root
-  password: 
+  password: tf10122011
 
 # production:
 #   adapter: postgresql
